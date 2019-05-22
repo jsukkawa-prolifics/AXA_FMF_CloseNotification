@@ -6,12 +6,48 @@ package com.axa_space.axa_fmf_closenotification;
 
 public class TaskDetails implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public TaskDetails() {
-    }
+	@org.kie.api.definition.type.Label(value = "Task Name")
+	private java.lang.String taskName;
+	@org.kie.api.definition.type.Label(value = "Task Status")
+	private java.util.List<java.lang.String> taskStatus;
+	@org.kie.api.definition.type.Label(value = "Comments")
+	private java.lang.String taskComments;
 
+	public TaskDetails() {
+	}
 
+	public java.lang.String getTaskName() {
+		return this.taskName;
+	}
 
+	public void setTaskName(java.lang.String taskName) {
+		this.taskName = taskName;
+	}
+
+	public java.util.List<java.lang.String> getTaskStatus() {
+		return this.taskStatus;
+	}
+
+	public void setTaskStatus(java.util.List<java.lang.String> taskStatus) {
+		this.taskStatus = taskStatus;
+	}
+
+	public java.lang.String getTaskComments() {
+		return this.taskComments;
+	}
+
+	public void setTaskComments(java.lang.String taskComments) {
+		this.taskComments = taskComments;
+	}
+
+	public TaskDetails(java.lang.String taskName,
+			java.util.List<java.lang.String> taskStatus,
+			java.lang.String taskComments) {
+		this.taskName = taskName;
+		this.taskStatus = taskStatus;
+		this.taskComments = taskComments;
+	}
 
 }
