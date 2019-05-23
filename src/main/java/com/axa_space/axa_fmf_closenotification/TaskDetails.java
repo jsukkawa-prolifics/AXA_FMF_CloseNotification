@@ -8,22 +8,22 @@ public class TaskDetails implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Document")
-	private java.lang.Byte document;
+	@org.kie.api.definition.type.Label(value = "Comments")
+	private java.util.List<java.lang.String> comments;
 
 	public TaskDetails() {
 	}
 
-	public java.lang.Byte getDocument() {
-		return this.document;
+	public java.util.List<java.lang.String> getComments() {
+		return this.comments;
 	}
 
-	public void setDocument(java.lang.Byte document) {
-		this.document = document;
+	public void setComments(java.util.List<java.lang.String> comments) {
+		this.comments = comments;
 	}
 
-	public TaskDetails(java.lang.Byte document) {
-		this.document = document;
+	public TaskDetails(java.util.List<java.lang.String> comments) {
+		this.comments = comments;
 	}
 
 }
