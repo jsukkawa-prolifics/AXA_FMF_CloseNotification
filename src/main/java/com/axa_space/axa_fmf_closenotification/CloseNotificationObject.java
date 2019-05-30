@@ -8,23 +8,16 @@ public class CloseNotificationObject implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("Task Name")
-	private java.lang.String taskName;
-	@org.kie.api.definition.type.Label("User Comments")
+	@org.kie.api.definition.type.Label("Submission Completed in Nautilus Manager Comments")
 	private java.lang.String userComments;
 
-	@org.kie.api.definition.type.Label(value = "Manager Comments")
+	@org.kie.api.definition.type.Label("Manager Comments")
 	private java.lang.String managerComments;
 
+	@org.kie.api.definition.type.Label(value = "Submission Completed in Nautilus User Comments")
+	private java.lang.String submissionCompletedNautilusManagerComments;
+
 	public CloseNotificationObject() {
-	}
-
-	public java.lang.String getTaskName() {
-		return this.taskName;
-	}
-
-	public void setTaskName(java.lang.String taskName) {
-		this.taskName = taskName;
 	}
 
 	public java.lang.String getUserComments() {
@@ -43,11 +36,21 @@ public class CloseNotificationObject implements java.io.Serializable {
 		this.managerComments = managerComments;
 	}
 
-	public CloseNotificationObject(java.lang.String taskName,
-			java.lang.String userComments, java.lang.String managerComments) {
-		this.taskName = taskName;
+	public java.lang.String getSubmissionCompletedNautilusManagerComments() {
+		return this.submissionCompletedNautilusManagerComments;
+	}
+
+	public void setSubmissionCompletedNautilusManagerComments(
+			java.lang.String submissionCompletedNautilusManagerComments) {
+		this.submissionCompletedNautilusManagerComments = submissionCompletedNautilusManagerComments;
+	}
+
+	public CloseNotificationObject(java.lang.String userComments,
+			java.lang.String managerComments,
+			java.lang.String submissionCompletedNautilusManagerComments) {
 		this.userComments = userComments;
 		this.managerComments = managerComments;
+		this.submissionCompletedNautilusManagerComments = submissionCompletedNautilusManagerComments;
 	}
 
 }
