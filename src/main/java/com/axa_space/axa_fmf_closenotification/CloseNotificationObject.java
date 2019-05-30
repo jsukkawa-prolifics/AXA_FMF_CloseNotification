@@ -8,32 +8,13 @@ public class CloseNotificationObject implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("Submission Completed in Nautilus Manager Comments")
-	private java.lang.String userComments;
-
-	@org.kie.api.definition.type.Label("Manager Comments")
-	private java.lang.String managerComments;
-
-	@org.kie.api.definition.type.Label(value = "Submission Completed in Nautilus User Comments")
+	@org.kie.api.definition.type.Label("Submission Completed in Nautilus User Comments")
 	private java.lang.String submissionCompletedNautilusUserComments;
 
+	@org.kie.api.definition.type.Label(value = "Submission Completed in Nautilus Manager Comments")
+	private java.lang.String submissionCompletedNautilusManagerComments;
+
 	public CloseNotificationObject() {
-	}
-
-	public java.lang.String getUserComments() {
-		return this.userComments;
-	}
-
-	public void setUserComments(java.lang.String userComments) {
-		this.userComments = userComments;
-	}
-
-	public java.lang.String getManagerComments() {
-		return this.managerComments;
-	}
-
-	public void setManagerComments(java.lang.String managerComments) {
-		this.managerComments = managerComments;
 	}
 
 	public java.lang.String getSubmissionCompletedNautilusUserComments() {
@@ -45,12 +26,20 @@ public class CloseNotificationObject implements java.io.Serializable {
 		this.submissionCompletedNautilusUserComments = submissionCompletedNautilusUserComments;
 	}
 
-	public CloseNotificationObject(java.lang.String userComments,
-			java.lang.String managerComments,
-			java.lang.String submissionCompletedNautilusUserComments) {
-		this.userComments = userComments;
-		this.managerComments = managerComments;
+	public java.lang.String getSubmissionCompletedNautilusManagerComments() {
+		return this.submissionCompletedNautilusManagerComments;
+	}
+
+	public void setSubmissionCompletedNautilusManagerComments(
+			java.lang.String submissionCompletedNautilusManagerComments) {
+		this.submissionCompletedNautilusManagerComments = submissionCompletedNautilusManagerComments;
+	}
+
+	public CloseNotificationObject(
+			java.lang.String submissionCompletedNautilusUserComments,
+			java.lang.String submissionCompletedNautilusManagerComments) {
 		this.submissionCompletedNautilusUserComments = submissionCompletedNautilusUserComments;
+		this.submissionCompletedNautilusManagerComments = submissionCompletedNautilusManagerComments;
 	}
 
 }
