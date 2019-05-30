@@ -11,8 +11,14 @@ public class CloseNotificationObject implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Submission Completed in Nautilus User Comments")
 	private java.lang.String submissionCompletedNautilusUserComments;
 
-	@org.kie.api.definition.type.Label(value = "Submission Completed in Nautilus Manager Comments")
+	@org.kie.api.definition.type.Label("Submission Completed in Nautilus Manager Comments")
 	private java.lang.String submissionCompletedNautilusManagerComments;
+
+	@org.kie.api.definition.type.Label(value = "Presubmission QA Instr User Comments")
+	private java.lang.String presubmissionQAInstrUserComments;
+
+	@org.kie.api.definition.type.Label(value = "Presubmission QA Instr Manager Comments")
+	private java.lang.String presubmissionQAInstrManagerComments;
 
 	public CloseNotificationObject() {
 	}
@@ -35,11 +41,33 @@ public class CloseNotificationObject implements java.io.Serializable {
 		this.submissionCompletedNautilusManagerComments = submissionCompletedNautilusManagerComments;
 	}
 
+	public java.lang.String getPresubmissionQAInstrUserComments() {
+		return this.presubmissionQAInstrUserComments;
+	}
+
+	public void setPresubmissionQAInstrUserComments(
+			java.lang.String presubmissionQAInstrUserComments) {
+		this.presubmissionQAInstrUserComments = presubmissionQAInstrUserComments;
+	}
+
+	public java.lang.String getPresubmissionQAInstrManagerComments() {
+		return this.presubmissionQAInstrManagerComments;
+	}
+
+	public void setPresubmissionQAInstrManagerComments(
+			java.lang.String presubmissionQAInstrManagerComments) {
+		this.presubmissionQAInstrManagerComments = presubmissionQAInstrManagerComments;
+	}
+
 	public CloseNotificationObject(
 			java.lang.String submissionCompletedNautilusUserComments,
-			java.lang.String submissionCompletedNautilusManagerComments) {
+			java.lang.String submissionCompletedNautilusManagerComments,
+			java.lang.String presubmissionQAInstrUserComments,
+			java.lang.String presubmissionQAInstrManagerComments) {
 		this.submissionCompletedNautilusUserComments = submissionCompletedNautilusUserComments;
 		this.submissionCompletedNautilusManagerComments = submissionCompletedNautilusManagerComments;
+		this.presubmissionQAInstrUserComments = presubmissionQAInstrUserComments;
+		this.presubmissionQAInstrManagerComments = presubmissionQAInstrManagerComments;
 	}
 
 }
