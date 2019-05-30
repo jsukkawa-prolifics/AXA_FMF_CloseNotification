@@ -6,12 +6,48 @@ package com.axa_space.axa_fmf_closenotification;
 
 public class CloseNotificationObject implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CloseNotificationObject() {
-    }
+	@org.kie.api.definition.type.Label("Task Name")
+	private java.lang.String taskName;
+	@org.kie.api.definition.type.Label("User Comments")
+	private java.lang.String userComments;
 
+	@org.kie.api.definition.type.Label(value = "Manager Comments")
+	private java.lang.String managerComments;
 
+	public CloseNotificationObject() {
+	}
 
+	public java.lang.String getTaskName() {
+		return this.taskName;
+	}
+
+	public void setTaskName(java.lang.String taskName) {
+		this.taskName = taskName;
+	}
+
+	public java.lang.String getUserComments() {
+		return this.userComments;
+	}
+
+	public void setUserComments(java.lang.String userComments) {
+		this.userComments = userComments;
+	}
+
+	public java.lang.String getManagerComments() {
+		return this.managerComments;
+	}
+
+	public void setManagerComments(java.lang.String managerComments) {
+		this.managerComments = managerComments;
+	}
+
+	public CloseNotificationObject(java.lang.String taskName,
+			java.lang.String userComments, java.lang.String managerComments) {
+		this.taskName = taskName;
+		this.userComments = userComments;
+		this.managerComments = managerComments;
+	}
 
 }
