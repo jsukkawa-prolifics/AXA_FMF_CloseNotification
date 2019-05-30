@@ -15,7 +15,7 @@ public class CloseNotificationObject implements java.io.Serializable {
 	private java.lang.String managerComments;
 
 	@org.kie.api.definition.type.Label(value = "Submission Completed in Nautilus User Comments")
-	private java.lang.String submissionCompletedNautilusManagerComments;
+	private java.lang.String submissionCompletedNautilusUserComments;
 
 	public CloseNotificationObject() {
 	}
@@ -36,21 +36,21 @@ public class CloseNotificationObject implements java.io.Serializable {
 		this.managerComments = managerComments;
 	}
 
-	public java.lang.String getSubmissionCompletedNautilusManagerComments() {
-		return this.submissionCompletedNautilusManagerComments;
+	public java.lang.String getSubmissionCompletedNautilusUserComments() {
+		return this.submissionCompletedNautilusUserComments;
 	}
 
-	public void setSubmissionCompletedNautilusManagerComments(
-			java.lang.String submissionCompletedNautilusManagerComments) {
-		this.submissionCompletedNautilusManagerComments = submissionCompletedNautilusManagerComments;
+	public void setSubmissionCompletedNautilusUserComments(
+			java.lang.String submissionCompletedNautilusUserComments) {
+		this.submissionCompletedNautilusUserComments = submissionCompletedNautilusUserComments;
 	}
 
 	public CloseNotificationObject(java.lang.String userComments,
 			java.lang.String managerComments,
-			java.lang.String submissionCompletedNautilusManagerComments) {
+			java.lang.String submissionCompletedNautilusUserComments) {
 		this.userComments = userComments;
 		this.managerComments = managerComments;
-		this.submissionCompletedNautilusManagerComments = submissionCompletedNautilusManagerComments;
+		this.submissionCompletedNautilusUserComments = submissionCompletedNautilusUserComments;
 	}
 
 }
