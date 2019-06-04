@@ -24,7 +24,7 @@ public class CloseNotificationObject implements java.io.Serializable {
 	private com.axa_space.axa_fmf_closenotification.SubmissionCompletedNautilus submissionCompletedNautilus;
 
 	@org.kie.api.definition.type.Label(value = "PreSubmission of QA Instruction Completed?")
-	private com.axa_space.axa_fmf_closenotification.PreSubmission_QA_Instructions_Object presubmissionQAInstr;
+	private com.axa_space.axa_fmf_closenotification.PreSubmissionQAInstructions presubmissionQAInstr;
 
 	public CloseNotificationObject() {
 	}
@@ -74,12 +74,12 @@ public class CloseNotificationObject implements java.io.Serializable {
 		this.submissionCompletedNautilus = submissionCompletedNautilus;
 	}
 
-	public com.axa_space.axa_fmf_closenotification.PreSubmission_QA_Instructions_Object getPresubmissionQAInstr() {
+	public com.axa_space.axa_fmf_closenotification.PreSubmissionQAInstructions getPresubmissionQAInstr() {
 		return this.presubmissionQAInstr;
 	}
 
 	public void setPresubmissionQAInstr(
-			com.axa_space.axa_fmf_closenotification.PreSubmission_QA_Instructions_Object presubmissionQAInstr) {
+			com.axa_space.axa_fmf_closenotification.PreSubmissionQAInstructions presubmissionQAInstr) {
 		this.presubmissionQAInstr = presubmissionQAInstr;
 	}
 
@@ -89,7 +89,7 @@ public class CloseNotificationObject implements java.io.Serializable {
 			java.lang.String presubmissionQAInstrUserComments,
 			java.lang.String presubmissionQAInstrManagerComments,
 			com.axa_space.axa_fmf_closenotification.SubmissionCompletedNautilus submissionCompletedNautilus,
-			com.axa_space.axa_fmf_closenotification.PreSubmission_QA_Instructions_Object presubmissionQAInstr) {
+			com.axa_space.axa_fmf_closenotification.PreSubmissionQAInstructions presubmissionQAInstr) {
 		this.submissionCompletedNautilusUserComments = submissionCompletedNautilusUserComments;
 		this.submissionCompletedNautilusManagerComments = submissionCompletedNautilusManagerComments;
 		this.presubmissionQAInstrUserComments = presubmissionQAInstrUserComments;
