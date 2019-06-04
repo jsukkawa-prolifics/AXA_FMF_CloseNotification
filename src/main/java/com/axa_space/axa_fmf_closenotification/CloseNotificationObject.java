@@ -20,8 +20,11 @@ public class CloseNotificationObject implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Presubmission QA Instr Manager Comments")
 	private java.lang.String presubmissionQAInstrManagerComments;
 
-	@org.kie.api.definition.type.Label(value = "Submission Completed in Nautilus")
+	@org.kie.api.definition.type.Label("Submission Completed in Nautilus")
 	private com.axa_space.axa_fmf_closenotification.SubmissionCompletedNautilus submissionCompletedNautilus;
+
+	@org.kie.api.definition.type.Label(value = "PreSubmission of QA Instruction Completed?")
+	private com.axa_space.axa_fmf_closenotification.PreSubmission_QA_Instructions_Object presubmissionQAInstr;
 
 	public CloseNotificationObject() {
 	}
@@ -71,17 +74,28 @@ public class CloseNotificationObject implements java.io.Serializable {
 		this.submissionCompletedNautilus = submissionCompletedNautilus;
 	}
 
+	public com.axa_space.axa_fmf_closenotification.PreSubmission_QA_Instructions_Object getPresubmissionQAInstr() {
+		return this.presubmissionQAInstr;
+	}
+
+	public void setPresubmissionQAInstr(
+			com.axa_space.axa_fmf_closenotification.PreSubmission_QA_Instructions_Object presubmissionQAInstr) {
+		this.presubmissionQAInstr = presubmissionQAInstr;
+	}
+
 	public CloseNotificationObject(
 			java.lang.String submissionCompletedNautilusUserComments,
 			java.lang.String submissionCompletedNautilusManagerComments,
 			java.lang.String presubmissionQAInstrUserComments,
 			java.lang.String presubmissionQAInstrManagerComments,
-			com.axa_space.axa_fmf_closenotification.SubmissionCompletedNautilus submissionCompletedNautilus) {
+			com.axa_space.axa_fmf_closenotification.SubmissionCompletedNautilus submissionCompletedNautilus,
+			com.axa_space.axa_fmf_closenotification.PreSubmission_QA_Instructions_Object presubmissionQAInstr) {
 		this.submissionCompletedNautilusUserComments = submissionCompletedNautilusUserComments;
 		this.submissionCompletedNautilusManagerComments = submissionCompletedNautilusManagerComments;
 		this.presubmissionQAInstrUserComments = presubmissionQAInstrUserComments;
 		this.presubmissionQAInstrManagerComments = presubmissionQAInstrManagerComments;
 		this.submissionCompletedNautilus = submissionCompletedNautilus;
+		this.presubmissionQAInstr = presubmissionQAInstr;
 	}
 
 }
