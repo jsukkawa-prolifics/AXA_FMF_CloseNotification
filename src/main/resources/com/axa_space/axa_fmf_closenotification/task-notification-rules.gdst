@@ -2,11 +2,11 @@
   <tableName>task-notification-rules</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
@@ -23,13 +23,14 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>taskname</header>
           <constraintValueType>1</constraintValueType>
           <factField>this</factField>
           <fieldType>this</fieldType>
           <operator>==</operator>
           <parameters/>
+          <binding>taskname</binding>
         </condition-column52>
       </conditions>
       <window>
@@ -46,7 +47,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>notificationrequired</header>
       <boundName>f1</boundName>
       <factField>empty</factField>
