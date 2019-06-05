@@ -6,12 +6,34 @@ package com.axa_space.axa_fmf_closenotification;
 
 public class TaskNotification implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public TaskNotification() {
-    }
+	private java.lang.String taskName;
+	private java.lang.Boolean notificationRequired;
 
+	public TaskNotification() {
+	}
 
+	public java.lang.String getTaskName() {
+		return this.taskName;
+	}
 
+	public void setTaskName(java.lang.String taskName) {
+		this.taskName = taskName;
+	}
+
+	public java.lang.Boolean getNotificationRequired() {
+		return this.notificationRequired;
+	}
+
+	public void setNotificationRequired(java.lang.Boolean notificationRequired) {
+		this.notificationRequired = notificationRequired;
+	}
+
+	public TaskNotification(java.lang.String taskName,
+			java.lang.Boolean notificationRequired) {
+		this.taskName = taskName;
+		this.notificationRequired = notificationRequired;
+	}
 
 }
