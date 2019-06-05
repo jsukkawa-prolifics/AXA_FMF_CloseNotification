@@ -13,7 +13,7 @@
   <conditionPatterns>
     <Pattern52>
       <factType>String</factType>
-      <boundName>f1</boundName>
+      <boundName>taskname</boundName>
       <isNegated>false</isNegated>
       <conditions>
         <condition-column52>
@@ -36,6 +36,7 @@
       <window>
         <parameters/>
       </window>
+      <entryPointName></entryPointName>
     </Pattern52>
   </conditionPatterns>
   <actionCols>
