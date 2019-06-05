@@ -20,11 +20,8 @@
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
-      <ruleName>Row 2 task-notification-rules</ruleName>
-      <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 2 task-notification-rules] was not activated. Expected it to be activated.</explanation>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
+      <ruleName>Row 1 task-notification-rules</ruleName>
+      <expectedFire>true</expectedFire>
     </expect-rule>
   </fixtures>
   <lastRunResult>2019-06-05 21:02:43.582 UTC</lastRunResult>
