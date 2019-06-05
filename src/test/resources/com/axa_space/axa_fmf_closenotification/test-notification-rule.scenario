@@ -24,20 +24,12 @@
       <executionTimeResult>21</executionTimeResult>
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
-    <expect-fact>
-      <fieldValues>
-        <expect-field>
-          <fieldName>notificationRequired</fieldName>
-          <expected>true</expected>
-          <operator>==</operator>
-          <nature>0</nature>
-        </expect-field>
-      </fieldValues>
-      <name>taskNotification</name>
-      <anonymous>false</anonymous>
-    </expect-fact>
+    <expect-rule>
+      <ruleName>Row 2 task-notification-rules</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2019-06-05 20:47:55.684 UTC</lastRunResult>
+  <lastRunResult>2019-06-05 20:50:33.919 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.axa_space.axa_fmf_closenotification</packageName>
