@@ -29,14 +29,7 @@
   <inclusive>false</inclusive>
   <packageName>com.axa_space.axa_fmf_closenotification</packageName>
   <imports>
-    <imports>
-      <org.kie.soup.project.datamodel.imports.Import>
-        <type>java.lang.Boolean</type>
-      </org.kie.soup.project.datamodel.imports.Import>
-      <org.kie.soup.project.datamodel.imports.Import>
-        <type>java.lang.String</type>
-      </org.kie.soup.project.datamodel.imports.Import>
-    </imports>
+    <imports/>
   </imports>
   <ksessions>
     <string>defaultKieSession</string>
