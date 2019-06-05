@@ -15,11 +15,6 @@
       <name>taskNotification</name>
       <isModify>false</isModify>
     </fact-data>
-    <org.drools.workbench.models.testscenarios.shared.CallMethod>
-      <state>0</state>
-      <variable>taskNotification</variable>
-      <callFieldValues/>
-    </org.drools.workbench.models.testscenarios.shared.CallMethod>
     <execution-trace>
       <executionTimeResult>21</executionTimeResult>
       <numberOfRulesFired>0</numberOfRulesFired>
@@ -29,7 +24,7 @@
       <expectedFire>true</expectedFire>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-06-05 20:50:33.919 UTC</lastRunResult>
+  <lastRunResult>2019-06-05 20:51:45.312 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.axa_space.axa_fmf_closenotification</packageName>
