@@ -109,7 +109,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>yes</valueString>
+        <valueString>Y</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -132,7 +132,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>no</valueString>
+        <valueString>N</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
