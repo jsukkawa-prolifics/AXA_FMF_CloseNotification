@@ -20,18 +20,14 @@
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
-      <ruleName>Row 2 task-notification-rules</ruleName>
-      <explanation>Rule [Row 2 task-notification-rules] was not activated. Expected it to be activated.</explanation>
+      <ruleName>Row 1 task-notification-rules</ruleName>
+      <explanation>Rule [Row 1 task-notification-rules] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
       <successResult>false</successResult>
       <actualResult>0</actualResult>
     </expect-rule>
-    <expect-rule>
-      <ruleName>Row 1 task-notification-rules</ruleName>
-      <expectedFire>true</expectedFire>
-    </expect-rule>
   </fixtures>
-  <lastRunResult>2019-06-06 19:22:17.34 UTC</lastRunResult>
+  <lastRunResult>2019-06-06 19:22:37.644 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.axa_space.axa_fmf_closenotification</packageName>
