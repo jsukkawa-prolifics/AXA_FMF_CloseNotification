@@ -16,11 +16,18 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>8</executionTimeResult>
+      <executionTimeResult>7</executionTimeResult>
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
+    <expect-rule>
+      <ruleName>Row 1 task-notification-rules</ruleName>
+      <explanation>Rule [Row 1 task-notification-rules] was not activated. Expected it to be activated.</explanation>
+      <expectedFire>true</expectedFire>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2019-06-06 19:16:43.315 UTC</lastRunResult>
+  <lastRunResult>2019-06-06 19:17:12.980 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.axa_space.axa_fmf_closenotification</packageName>
