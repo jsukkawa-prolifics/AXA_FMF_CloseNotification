@@ -16,21 +16,24 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>7</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>41</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 2 task-notification-rules</ruleName>
-      <explanation>Rule [Row 2 task-notification-rules] was activated 1 times.</explanation>
+      <explanation>Rule [Row 2 task-notification-rules] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>notificationRequired</fieldName>
           <expected>true</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[taskNotification] field [notificationRequired] was [] expected [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -39,7 +42,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2019-06-05 21:06:47.821 UTC</lastRunResult>
+  <lastRunResult>2019-06-06 18:13:29.854 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.axa_space.axa_fmf_closenotification</packageName>
