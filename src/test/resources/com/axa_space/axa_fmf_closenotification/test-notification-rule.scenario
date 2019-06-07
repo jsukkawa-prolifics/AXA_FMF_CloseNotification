@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>taskName</name>
-          <value>PreSubmission_QnA_Instructions</value>
+          <value>Complete_Submission_in_Nautilus</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -22,18 +22,11 @@
       <executionTimeResult>12</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
-    <expect-rule>
-      <ruleName>Row 1 task-notification-rules</ruleName>
-      <explanation>Rule [Row 1 task-notification-rules] was activated 1 times.</explanation>
-      <expectedFire>true</expectedFire>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
-    </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>notificationRequired</fieldName>
-          <expected>false</expected>
+          <expected>true</expected>
           <actualResult>false</actualResult>
           <successResult>false</successResult>
           <explanation>[taskNotification] field [notificationRequired] was [false] expected [true].</explanation>
@@ -44,6 +37,10 @@
       <name>taskNotification</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>Row 2 task-notification-rules</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
   </fixtures>
   <lastRunResult>2019-06-07 13:35:29.899 UTC</lastRunResult>
   <rules/>
