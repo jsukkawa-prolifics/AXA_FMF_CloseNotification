@@ -19,18 +19,33 @@
       <name>axa-rules</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>7</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>12</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 1 task-notification-rules</ruleName>
-      <explanation>Rule [Row 1 task-notification-rules] was not activated. Expected it to be activated.</explanation>
+      <explanation>Rule [Row 1 task-notification-rules] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>notificationRequired</fieldName>
+          <expected>false</expected>
+          <actualResult>false</actualResult>
+          <successResult>false</successResult>
+          <explanation>[taskNotification] field [notificationRequired] was [false] expected [true].</explanation>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>taskNotification</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2019-06-07 13:33:59.423 UTC</lastRunResult>
+  <lastRunResult>2019-06-07 13:35:29.899 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.axa_space.axa_fmf_closenotification</packageName>
