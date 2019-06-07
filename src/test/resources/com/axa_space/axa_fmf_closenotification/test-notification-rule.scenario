@@ -19,7 +19,7 @@
       <name>axa-rules</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>12</executionTimeResult>
+      <executionTimeResult>10</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -28,8 +28,8 @@
           <fieldName>notificationRequired</fieldName>
           <expected>true</expected>
           <actualResult>false</actualResult>
-          <successResult>false</successResult>
-          <explanation>[taskNotification] field [notificationRequired] was [false] expected [true].</explanation>
+          <successResult>true</successResult>
+          <explanation>[taskNotification] field [notificationRequired] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -39,10 +39,45 @@
     </expect-fact>
     <expect-rule>
       <ruleName>Row 2 task-notification-rules</ruleName>
+      <explanation>Rule [Row 2 task-notification-rules] was activated 1 times.</explanation>
+      <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
+    <fact-data>
+      <type>TaskNotification</type>
+      <fieldData>
+        <field-data>
+          <name>taskName</name>
+          <value>PreSubmission_QnA_Instructions</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>taskNotification2</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>axa-rules</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <execution-trace/>
+    <expect-rule>
+      <ruleName>Row 1 task-notification-rules</ruleName>
       <expectedFire>true</expectedFire>
     </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>notificationRequired</fieldName>
+          <expected>false</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>taskNotification2</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2019-06-07 13:35:29.899 UTC</lastRunResult>
+  <lastRunResult>2019-06-07 13:36:20.272 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.axa_space.axa_fmf_closenotification</packageName>
