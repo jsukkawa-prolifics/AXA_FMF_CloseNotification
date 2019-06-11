@@ -11,7 +11,7 @@ public class TaskNotification implements java.io.Serializable {
 	private java.lang.String taskName;
 	private java.lang.Boolean notificationRequired;
 
-	private java.lang.String processID;
+	private long processID;
 
 	public TaskNotification() {
 	}
@@ -32,16 +32,16 @@ public class TaskNotification implements java.io.Serializable {
 		this.notificationRequired = notificationRequired;
 	}
 
-	public java.lang.String getProcessID() {
+	public long getProcessID() {
 		return this.processID;
 	}
 
-	public void setProcessID(java.lang.String processID) {
+	public void setProcessID(long processID) {
 		this.processID = processID;
 	}
 
 	public TaskNotification(java.lang.String taskName,
-			java.lang.Boolean notificationRequired, java.lang.String processID) {
+			java.lang.Boolean notificationRequired, long processID) {
 		this.taskName = taskName;
 		this.notificationRequired = notificationRequired;
 		this.processID = processID;
