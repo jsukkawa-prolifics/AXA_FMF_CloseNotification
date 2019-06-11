@@ -11,7 +11,6 @@ public class TaskNotification implements java.io.Serializable {
 	private java.lang.String taskName;
 	private java.lang.Boolean notificationRequired;
 
-	@org.kie.api.definition.type.Label(value = "Process ID")
 	private java.lang.String processID;
 
 	public TaskNotification() {
